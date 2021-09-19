@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import colors from './colors';
 import variables from './variables';
 import fonts from './fonts';
+import { up } from 'styled-breakpoints';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -39,7 +40,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-family: var(--font-headings);
+    font-size: 3.2rem;
+    line-height: ${68 / 56};
+    letter-spacing: 0.2px;
+
+    ${up('md')} {
+    font-size: 5.6rem;
+    }
   }
 
   /* Chrome, Safari, Edge, Opera */
