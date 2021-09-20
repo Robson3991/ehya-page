@@ -39,6 +39,12 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
   h1 {
     font-family: var(--font-headings);
     font-size: 3.2rem;

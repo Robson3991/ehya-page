@@ -1,22 +1,32 @@
 import data from './NavigationData';
 import { LinkT } from 'types.d';
-import { Container, NavigationItem } from './Navigation.styles';
+import {
+  Container,
+  SubNavContainer,
+  NavigationItem,
+  NavigationLink,
+  SubNavItem,
+} from './Navigation.styles';
+import AngleDown from 'components/atoms/icons/AngleDown';
 
 const SubNavigation: React.FC<{ navChildren: LinkT[] }> = ({ navChildren }) => (
-  <Container>
-    {navChildren.map(({ url, name }) => (
-      <NavigationItem href={url}>{name}</NavigationItem>
+  <SubNavContainer>
+    {navChildren.map(({ url, name }, index) => (
+      <SubNavItem key={`subnav-item-${index}`}>
+        <NavigationLink href={url}>{name}</NavigationLink>
+      </SubNavItem>
     ))}
-  </Container>
+  </SubNavContainer>
 );
 
 const Navigation = () => (
   <Container>
-    {data.map(({ name, url, haveChildren, navChildren }) => (
-      <li>
-        <NavigationItem href={url}>{name}</NavigationItem>
+    {data.map(({ name, url, haveChildren, navChildren }, index) => (
+      <NavigationItem key={`nav-item-${index}`}>
+        <NavigationLink href={url}>{name}</NavigationLink>
+        {haveChildren && <AngleDown />}
         {haveChildren && <SubNavigation navChildren={navChildren as LinkT[]} />}
-      </li>
+      </NavigationItem>
     ))}
   </Container>
 );

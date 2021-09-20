@@ -17,6 +17,13 @@ const fonts = css`
   }
   @font-face {
     font-family: 'Open Sans';
+    src: url('/fonts/open-sans/OpenSans-Semibold.ttf');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
     src: url('/fonts/open-sans/OpenSans-Bold.ttf');
     font-style: bold;
     font-weight: 600;
