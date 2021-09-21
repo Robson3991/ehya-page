@@ -5,8 +5,8 @@ const Sponsors = () => (
   <StyledContainer as="section">
     <Header>Sponsors of TheFutureTalks Conference</Header>
     <Logos>
-      {data.map((image) => (
-        <Logo>
+      {data.map((image, key) => (
+        <Logo key={`logo-${key}`}>
           <img src={`/images/companies/${image}.svg`} />
         </Logo>
       ))}
