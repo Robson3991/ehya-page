@@ -4,10 +4,10 @@ import { up } from 'styled-breakpoints';
 export const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 23px 0;
+  margin: 23px 0;
 
   ${up('md')} {
-    padding: 36px 0;
+    margin: 36px 0;
   }
 `;
 

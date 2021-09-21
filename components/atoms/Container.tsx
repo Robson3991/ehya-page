@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { up } from 'styled-breakpoints';
+import { up, down } from 'styled-breakpoints';
 
 const Container = styled.div`
   width: 100%;

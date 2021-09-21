@@ -7,6 +7,7 @@ interface ButtonProps {
   withArrow?: Boolean;
   isFilled?: Boolean;
   text: string;
+  [x: string]: any;
 }
 
 const filledStyle = css`

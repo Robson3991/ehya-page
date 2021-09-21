@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--font-primary);
     font-size: 1.8rem;
     font-weight: 400;
-    background: var(--color-lightgrey);
     color: var(--color-primary);
   }
 
@@ -53,6 +52,17 @@ const GlobalStyle = createGlobalStyle`
 
     ${up('md')} {
     font-size: 5.6rem;
+    }
+  }
+
+  p {
+    color: var(--color-grey);
+    font-size: 1.6rem;
+    line-height: ${36 / 20};
+
+    ${up('md')} {
+      color: var(--color-primary);
+      font-size: 2rem;
     }
   }
 

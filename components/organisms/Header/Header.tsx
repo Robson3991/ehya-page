@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Container from 'components/atoms/Container';
 import { Wrapper, HeaderNav } from './Header.styles';
 import Navigation from 'components/molecules/Navigation/Navigation';
+import Container from 'components/atoms/Container';
 
 const Header = () => (
   <Container>

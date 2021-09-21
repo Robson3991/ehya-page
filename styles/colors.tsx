@@ -5,9 +5,9 @@ const colors = css`
     --color-white: #ffffff;
     --color-black: #000000;
     --color-black-rgb: 0, 0, 0;
-    --color-grey: #edf1f2;
-    --color-lightgrey: #f6f6f6;
-    --color-darkgrey: #898989;
+    --color-grey: #5a7184;
+    --color-lightgrey: #8c98a4;
+    --color-light: #e5eaf4;
 
     --color-primary: #183b56;
     --color-primary-light: #1565d8;
