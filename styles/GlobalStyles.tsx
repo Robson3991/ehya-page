@@ -66,6 +66,20 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h2 {
+    font-size: 3.6rem;
+    letter-spacing: 0.2px
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: ${32 / 24};
+    
+    ${up('md')} {
+      font-size: 2.4rem;
+    }
+  }
+
   /* Chrome, Safari, Edge, Opera */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {

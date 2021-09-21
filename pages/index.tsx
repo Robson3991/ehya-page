@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from 'components/organisms/Header/Header';
 import Hero from 'components/organisms/Hero/Hero';
+import Sponsors from 'components/organisms/Sponsors/Sponsors';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Header />
         <Hero />
+        <Sponsors />
       </main>
     </div>
   );
