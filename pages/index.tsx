@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Header from 'components/molecules/Header/Header';
+import Header from 'components/organisms/Header/Header';
 
 export default function Home() {
   return (
